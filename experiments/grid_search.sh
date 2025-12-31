@@ -21,7 +21,7 @@ for method in "${METHODS[@]}"; do
             echo "Running: Method=$method | Steps=$step | Scale=$scale"
             echo "------------------------------------------------"
             
-            python test.py \
+            python src/test.py \
                 --config ".\configs\finetune_config.yaml" \
                 --weights "$WEIGHTS" \
                 --img_path "$IMG" \

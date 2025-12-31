@@ -25,7 +25,22 @@ assets/         # Figures used in the README
 ## Getting started
 
 ### Environment
-This codebase targets Python and PyTorch-based workflows. Create your environment with the packages required by your setup (PyTorch, TorchMetrics, OpenCV, etc.).
+This codebase targets Python and PyTorch-based workflows. Install the packages below (versions are not pinned; adjust to your system/GPU):
+
+- `torch`
+- `numpy`
+- `opencv-python`
+- `albumentations`
+- `pyyaml`
+- `tqdm`
+- `matplotlib`
+- `pandas`
+- `torchmetrics`
+- `astra-toolbox`
+- `monai`
+- `monai-generative`
+
+> Tip: If you only need the flow-matching pipeline (not the diffusion comparison), you can omit `monai`/`monai-generative`.
 
 ### Training
 Run a training job with one of the provided configs:
@@ -60,6 +75,13 @@ Reconstruction runs and metrics are written to `outputs/<experiment_name>/`, wit
 - `sinogram.png` for inputs.
 - `gt.png` for references.
 - `metrics.csv` for evaluation metrics.
+
+## Data and pretrained weights
+Placeholders are provided below for the dataset and model weights. Replace the links when you are ready to release them.
+
+- **Training/validation data:** [link-to-dataset](TBD)
+- **Test data:** [link-to-test-set](TBD)
+- **Pretrained model weights:** [link-to-weights](TBD)
 
 ## Citation
 If you use this repository, please cite the paper (BibTeX to be added upon publication):

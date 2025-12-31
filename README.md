@@ -86,7 +86,7 @@ Placeholders are provided below for the dataset and model weights. Replace the l
 If you use this repository, please cite the paper (BibTeX to be added upon publication):
 
 ```bibtex
-@article{physics_guided_flow_matching_ct,
+@article{evangelista2025physics,
   title   = {Physics-Guided Flow Matching for CT Image Reconstruction},
   author  = {Anonymous},
   journal = {IEEE Transactions on Medical Imaging},

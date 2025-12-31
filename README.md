@@ -1,6 +1,6 @@
 This repository contains code and experiment outputs for the paper **"Physics-Guided Flow Matching for CT Image Reconstruction"** (in submission to *IEEE Transactions on Medical Imaging*).
 
-![Graphical abstract](assets/graphical_abstract.png)
+![Graphical abstract](assets/FMGraphicalAbstract.png)
 
 ## Overview
 Physics-guided flow matching integrates CT forward models with generative flow matching to improve reconstruction quality under limited-angle and noisy acquisition settings. The repository includes:

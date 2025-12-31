@@ -1,0 +1,25 @@
+# --- ARCHITECTURE (Must match training script exactly) ---
+sample_size: 256
+in_channels: 1
+out_channels: 1
+
+# Corresponds to num_channels=(64, 128, 256, 512)
+block_out_channels: 
+  - 64
+  - 128
+  - 256
+  - 512
+
+# Corresponds to attention_levels=(False, False, True, True)
+# In MONAI config mapping:
+attention_levels:
+  - false
+  - false
+  - true
+  - true
+
+# Corresponds to num_res_blocks=2
+layers_per_block: 2
+
+# Corresponds to num_head_channels=32
+num_head_channels: 32

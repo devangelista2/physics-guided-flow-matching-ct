@@ -1,0 +1,32 @@
+experiment_name: "mayo_fm_training"
+device: "cuda"
+
+data:
+  data_dir: "../data/Mayo/"
+  img_size: 256
+  batch_size: 4
+  num_workers: 0
+  # Albumentations parameters
+  aug_prob: 0.5
+  elastic_alpha: 120
+  elastic_sigma: 6 
+
+model:
+  in_channels: 1
+  out_channels: 1
+  # Base channels for the first layer
+  base_channels: 64
+  # Channel multipliers for each level
+  channel_mults: [1, 2, 4, 4]
+  # Levels where attention mechanisms are applied (0 is the top, 3 is bottom)
+  attention_resolutions: [2, 3] 
+  # Number of residual blocks per level
+  num_res_blocks: 2
+  dropout: 0.1
+
+training:
+  epochs: 500
+  learning_rate: 1.0e-4
+  sigma_min: 1.0e-5  # Minimum noise level for stability
+  save_every: 50
+  sample_every: 5   # Generate images every N epochs

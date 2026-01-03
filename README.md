@@ -79,8 +79,8 @@ Reconstruction runs and metrics are written to `outputs/<experiment_name>/`, wit
 ## Data and pretrained weights
 Placeholders are provided below for the dataset and model weights. Replace the links when you are ready to release them.
 
-- **Training/Test data:** [https://drive.google.com/drive/folders/13BEiz6t57qSbwBpCtfqllmYTLmkhQeFE?usp=drive_link](TBD)
-- **Pretrained model weights:** [TBD](TBD)
+- **Training/Test data:** [Google Drive Link](https://drive.google.com/drive/folders/13BEiz6t57qSbwBpCtfqllmYTLmkhQeFE?usp=drive_link)
+- **Pretrained model weights:** [Google Drive Link](TBD)
 
 ## Citation
 If you use this repository, please cite the paper (BibTeX to be added upon publication):
